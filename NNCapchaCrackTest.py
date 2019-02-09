@@ -85,6 +85,7 @@ for loop in range(25):
     width = 8
     height = 10
     box = (left, top, left + width, top + height)
+    
     # print box;
 
     area = im.crop(box)
@@ -92,3 +93,4 @@ for loop in range(25):
     area.save('inputCrop/input' + fileName + "_" + str(count) + '.png')
 
     im.save('inputMod/input'+fileName+'.png')  # Save the modified pixels as .png
+
