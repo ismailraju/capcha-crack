@@ -46,7 +46,7 @@ for loop in range(25):
     yy1=y1;
     count = 0
     isNestedEmptyHas=1
-    for px in range(x1,x2+1):
+    for px in range(x1,x2+2):
         empty=1
 
         for py in range(y1,y2+1):
@@ -80,17 +80,17 @@ for loop in range(25):
 
 
     # ========================================
-    left = xx1
-    top = y1
-    width = 8
-    height = 10
-    box = (left, top, left + width, top + height)
-
-    # print box;
-
-    area = im.crop(box)
-    # print area;
-    area.save('inputCrop/input' + fileName + "_" + str(count) + '.png')
+    # left = xx1
+    # top = y1
+    # width = 8
+    # height = 10
+    # box = (left, top, left + width, top + height)
+    #
+    # # print box;
+    #
+    # area = im.crop(box)
+    # # print area;
+    # area.save('inputCrop/input' + fileName + "_" + str(count) + '.png')
 
     im.save('inputMod/input'+fileName+'.png')  # Save the modified pixels as .png
 
