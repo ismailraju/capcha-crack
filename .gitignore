@@ -1,2 +1,4 @@
 /inputCrop/*
 /inputMod/*
+!/inputCrop
+!/inputMod
