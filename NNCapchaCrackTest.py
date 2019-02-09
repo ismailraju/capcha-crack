@@ -46,10 +46,10 @@ for loop in range(25):
     yy1=y1;
     count = 0
     isNestedEmptyHas=1
-    for px in range(x1,x2):
+    for px in range(x1,x2+1):
         empty=1
 
-        for py in range(y1,y2):
+        for py in range(y1,y2+1):
             # print 'x'+str(px)+'/y'+str(py);
             if( pix[px, py][0] ==0):
                 empty=0
@@ -85,7 +85,7 @@ for loop in range(25):
     width = 8
     height = 10
     box = (left, top, left + width, top + height)
-    
+
     # print box;
 
     area = im.crop(box)
